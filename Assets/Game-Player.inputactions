@@ -84,8 +84,8 @@
                 {
                     "name": "",
                     "id": "87d49b5d-be85-4d64-a361-b7faa4a50a07",
-                    "path": "<Keyboard>/q",
-                    "interactions": "Hold",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard",
                     "action": "Ability1",

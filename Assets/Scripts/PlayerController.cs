@@ -27,12 +27,22 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        _moveDirection = move.action.ReadValue<Vector2>();
+        if (move != null && move.action != null)
+        {
+            _moveDirection = move.action.ReadValue<Vector2>();
+        }
+        else
+        {
+            _moveDirection = Vector2.zero;
+        }
     }
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = _moveDirection * moveSpeed;
+        if (rb != null)
+        {
+            rb.linearVelocity = _moveDirection * moveSpeed;
+        }
     }
     
     private void OnInteract(InputAction.CallbackContext context)
