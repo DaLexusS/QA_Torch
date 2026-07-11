@@ -14,7 +14,15 @@ public class Torch
     {
         if (IsPlayerNearby)
         {
-            IsLit = true;
+            if (!IsLit)
+            {
+                IsLit = true;
+            }
+            else
+            {
+                IsLit = false;
+            }
+
             return true;
         }
         
